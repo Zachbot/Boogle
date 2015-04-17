@@ -1,0 +1,75 @@
+/*   */
+
+* {
+  margin: 0;   /* brskalnik ima po defaultu nastavljeno na 10 */
+}
+html, body {
+  height: 100%;
+  font-family: arial, sans-serif;  /* izbere arial, èe ga nima , bo sans serif */
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px; /* ker je body na 100%, moramo margin dvignit za višino footerja gor  */
+
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 40px; 
+}
+
+.site-footer {
+  border-top: 1px solid #e4e4e4;
+  background: #f2f2f2;
+}
+
+.site-header{
+  display: inline-block;
+  line-height: 24px;
+  /* position: sticky; */
+  background: #f2f2f2;
+}
+
+/*footer*/
+footer li {
+ display: inline-block; margin-left: 10px;
+ font-size: 14px
+}
+
+footer a {
+color: #666;
+text-decoration: none;
+
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+.logo img {
+width: 100%;
+height: auto;
+}
+
+.logo {
+width: 250px;
+margin: 0 auto;
+padding-top: 110px;
+}
+
+
+footer ul {
+margin: 12px
+}
+
+.left {
+float: left;
+}
+
+.right {
+float: right;
+}
